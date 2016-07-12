@@ -37,7 +37,7 @@ public class HibernateCourseDao  implements CourseDao{
         }
     }
 
-    public void delete(Long courseId) {
+    public void delete(Integer courseId) {
         Session session = sessionFactory.openSession();
         Transaction tx = session.getTransaction();
         try {
@@ -53,7 +53,7 @@ public class HibernateCourseDao  implements CourseDao{
         }
     }
 
-    public Course findById(Long courseId) {
+    public Course findById(Integer courseId) {
         Session session = sessionFactory.openSession();
         try {
             return (Course) session.get(Course.class, courseId);
