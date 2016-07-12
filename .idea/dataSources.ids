@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - test001@localhost" uuid="7145fd00-46fb-4cd4-b00d-60e2c0e52d7c">
+    <database-info product="MySQL" version="5.7.11-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="test001"/>
+      <table id="2" parent="1" name="course"/>
+      <table id="3" parent="1" name="testtbl001"/>
+      <table id="4" parent="1" name="testtbl002"/>
+      <column id="5" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="6" parent="2" name="title">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="7" parent="2" name="beginDate">
+        <data-type>date</data-type>
+      </column>
+      <column id="8" parent="2" name="endDate">
+        <data-type>date</data-type>
+      </column>
+      <column id="9" parent="2" name="fee">
+        <data-type>int(11)</data-type>
+      </column>
+      <key id="10" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="11" parent="3" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="12" parent="3" name="stringCn01">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="13" parent="3" name="dateTimeCn01">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="14" parent="3" name="dateTimeCn02">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="15" parent="3" name="decCn01">
+        <data-type>decimal(5,2)</data-type>
+      </column>
+      <column id="16" parent="3" name="TestInt1">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="17" parent="3" name="time01">
+        <data-type>time</data-type>
+      </column>
+      <key id="18" parent="3" name="PRIMARY">
+        <columns>uid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="4" name="UserId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="20" parent="4" name="UserName">
+        <data-type>varchar(45)</data-type>
+      </column>
+      <column id="21" parent="4" name="UserInt1">
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="22" parent="4" name="date">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="23" parent="4" name="PRIMARY">
+        <columns>UserId</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>
