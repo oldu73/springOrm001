@@ -1,5 +1,8 @@
 package com.company;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -11,7 +14,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CourseDao courseDao = new HibernateCourseDao();
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans-hibernate.xml");
+
+        CourseDao courseDao = (CourseDao) context.getBean("courseDao");
+
         Course course = new Course();
         course.setTitle("Les fondamentaux de Spring");
 
